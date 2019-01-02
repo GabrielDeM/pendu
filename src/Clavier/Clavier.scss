@@ -1,0 +1,25 @@
+#Clavier {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .letter {
+        padding: 10px 20px;
+        margin: 10px 20px;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        border-radius: 20%;
+
+        
+        &:hover {
+            cursor: pointer;
+        }
+
+        &-wrong {
+            background-color: rgb(122, 28, 28);
+            cursor: not-allowed !important;
+        }
+    }
+}
