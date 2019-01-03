@@ -80,7 +80,7 @@ class App extends Component {
     return (
           <div id="App">
             <h1 className="h1">Jeu du Pendu</h1>
-            <h2 className="tentatives">{tentatives}</h2>
+            <h2 className="tentatives">{tentatives}/5</h2>
             <h2 className="word">
               {words.map((word, index) => (
                 word === " " ? <span key={word + index}>&nbsp;</span> :
