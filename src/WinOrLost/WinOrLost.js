@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import './WinOrLost.scss'
 
@@ -10,5 +11,10 @@ const WinOrLost = ({ tentatives, handleReset }) => (
         <div onClick={handleReset}>Rejouer</div>
     </div>
 )
+
+WinOrLost.propTypes = {
+    tentatives: PropTypes.number.isRequired,
+    handleReset: PropTypes.func.isRequired,
+}
 
 export default WinOrLost

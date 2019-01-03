@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import './Clavier.scss'
 
@@ -9,5 +10,13 @@ const Clavier = ({ letters, letterClick, goodLetters, wrongLetters }) => (
         ))}
     </div>
 )
+
+Clavier.propTypes = {
+    letters: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+    letterClick: PropTypes.func.isRequired,
+    goodLetters: PropTypes.arrayOf(PropTypes.string).isRequired,
+    wrongLetters: PropTypes.arrayOf(PropTypes.string).isRequired,
+
+}
 
 export default Clavier
