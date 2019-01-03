@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
-import Clavier from '../Clavier/Clavier'
-import WinOrLost from '../WinOrLost/WinOrLost'
+import Clavier from '../Clavier'
+import WinOrLost from '../WinOrLost'
 
 import './App.scss'
 
